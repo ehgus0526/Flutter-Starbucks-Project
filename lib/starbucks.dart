@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'StarbucksSecondPage.dart';
 
 /// Starbucks 메인 색상
 Color starbucksPrimaryColor = Color.fromARGB(255, 83, 184, 138);
@@ -111,20 +112,6 @@ class StarbucksFirstPage extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Center(child: Text("Starbucks 첫 번째 페이지")),
     );
-  }
-}
-
-/// 두 번째 페이지
-class StarbucksSecondPage extends StatelessWidget {
-  const StarbucksSecondPage({Key? key}) : super(key: key);
-
-  /// 카드 이미지
-  final String cardImgUrl =
-      "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-card.png";
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Starbucks 두 번째 페이지")));
   }
 }
 
