@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+import 'starbucks_first_page.dart';
 import 'starbucks_second_page.dart';
 import 'starbucks_third_page.dart';
 
-/// Starbucks 메인 색상
+// Starbucks 메인 색상
 Color starbucksPrimaryColor = Color.fromARGB(255, 83, 184, 138);
 
-/// Starbucs 포인트 색상
+// Starbucs 포인트 색상
 Color starbucksAccentColor = Color.fromARGB(255, 199, 176, 121);
 
 class Starbucks extends StatefulWidget {
@@ -58,60 +58,6 @@ class _StarbucksState extends State<Starbucks> {
           BottomNavigationBarItem(icon: Icon(Icons.more_horiz), label: ""),
         ],
       ),
-    );
-  }
-}
-
-/// 첫 번째 페이지
-class StarbucksFirstPage extends StatelessWidget {
-  const StarbucksFirstPage({Key? key}) : super(key: key);
-
-  /// 배경 이미지 URL
-  final String backImg =
-      "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-bg.png";
-
-  /// Frequency 이미지 URL
-  final String frequencyImg =
-      "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-frequency.png";
-
-  /// 추천 메뉴
-  final List<Map<String, String>> recommendMenu = const [
-    {
-      "name": "돌체쿠키라떼",
-      "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-menu1.jpg",
-    },
-    {
-      "name": "아이스 홀리데이 돌체 쿠키 라떼",
-      "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/ic/2/starbucks-menu2.jpg",
-    },
-    {
-      "name": "스노우 민트 초콜릿",
-      "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-menu3.jpg",
-    },
-    {
-      "name": "아이스 스노우 민트 초콜릿",
-      "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-menu4.jpg",
-    },
-    {
-      "name": "스노우 민트 초콜릿 블렌디드",
-      "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-menu5.jpg",
-    },
-  ];
-
-  /// 크리스마스 이벤트 이미지 URL
-  final String eventImg =
-      "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-christmas.jpg";
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(child: Text("Starbucks 첫 번째 페이지")),
     );
   }
 }

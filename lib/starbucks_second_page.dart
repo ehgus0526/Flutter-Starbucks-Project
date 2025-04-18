@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class StarbucksSecondPage extends StatelessWidget {
   const StarbucksSecondPage({Key? key}) : super(key: key);
 
-  /// 카드 이미지
+  // 카드 이미지
   final String cardImgUrl =
       "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-card.png";
 

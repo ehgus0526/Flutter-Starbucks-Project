@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-/// Starbucks 메인 색상
+// Starbucks 메인 색상
 Color starbucksPrimaryColor = Color.fromARGB(255, 83, 184, 138);
 
 class StarbucksThirdPage extends StatelessWidget {
   const StarbucksThirdPage({Key? key}) : super(key: key);
 
-  /// 전체 메뉴
+  // 전체 메뉴
   final List<Map<String, String>> menu = const [
     {
       "ko": "추천",
@@ -18,7 +18,7 @@ class StarbucksThirdPage extends StatelessWidget {
       "ko": "리저브 에스프레소",
       "en": "Reserve Espresso",
       "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/ic/2/starbucks-menu2.jpg",
+          "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-menu5.jpg",
     },
     {
       "ko": "리저브 드립",
