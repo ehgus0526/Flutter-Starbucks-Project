@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'StarbucksSecondPage.dart';
+import 'starbucks_second_page.dart';
+import 'starbucks_third_page.dart';
 
 /// Starbucks 메인 색상
 Color starbucksPrimaryColor = Color.fromARGB(255, 83, 184, 138);
@@ -112,43 +113,5 @@ class StarbucksFirstPage extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Center(child: Text("Starbucks 첫 번째 페이지")),
     );
-  }
-}
-
-/// 세 번째 페이지
-class StarbucksThirdPage extends StatelessWidget {
-  const StarbucksThirdPage({Key? key}) : super(key: key);
-
-  /// 전체 메뉴
-  final List<Map<String, String>> menu = const [
-    {
-      "ko": "추천",
-      "en": "Recommend",
-      "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-menu1.jpg",
-    },
-    {
-      "ko": "리저브 에스프레소",
-      "en": "Reserve Espresso",
-      "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/ic/2/starbucks-menu2.jpg",
-    },
-    {
-      "ko": "리저브 드립",
-      "en": "Reserve Drip",
-      "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-menu3.jpg",
-    },
-    {
-      "ko": "콜드브루",
-      "en": "ColdBrew",
-      "imgUrl":
-          "https://devclass.devstory.co.kr/flutter-basic/2/starbucks-menu4.jpg",
-    },
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Starbucks 세 번째 페이지")));
   }
 }
